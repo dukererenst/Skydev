@@ -7,8 +7,9 @@ package com.indexgenesys.skydev.controller;
 import com.indexgenesys.skydev.abstracts.SkyDevMethods;
 import com.indexgenesys.skydev.entity.CompanyInformation;
 import com.indexgenesys.skydev.entity.EntityModel;
+import jakarta.enterprise.context.SessionScoped;
 import javax.inject.Named;
-import javax.enterprise.context.SessionScoped;
+
 import java.io.Serializable;
 import java.util.List;
 import lombok.Getter;
