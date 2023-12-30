@@ -1,0 +1,42 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pv="http://primefaces.org/paradise">
+
+    <div class="layout-menu-wrapper ">
+        <div class="layout-menu-container">
+            <h:form id="menuform">
+                <div class="mobile-search">
+                    <i class="pi pi-fw pi-search topbar-search-icon"></i>
+                    <input type="text" class="topbar-search" placeholder="Type your search here"/>
+                </div>
+                <pv:menu widgetVar="paradiseMenuWidget" >
+                    <p:submenu  label="Favorites" icon="pi pi-home">
+                        <p:menuitem id="m_dashboard" value="Dashboard" icon="pi pi-home" outcome="/dashboard"/>
+                    </p:submenu>
+                   
+                    
+                    <p:submenu  label="Settings" icon="pi pi-cog"  >
+                        <p:menuitem  value="Plate Request" icon="pi pi-home" outcome="/dashboard"/>
+                        <p:menuitem value="Plate Approval" icon="pi pi-home" outcome="/dashboard"/>
+                        <p:menuitem value="Generation" icon="pi pi-users" outcome="/dashboard"/>
+                        <p:menuitem value="Printing" icon="pi pi-home" outcome="/dashboard"/>
+
+                    </p:submenu>
+                     <p:submenu  label="Verification" icon="pi pi-cog"  >
+                        <p:menuitem  value="Plate Request" icon="pi pi-home" outcome="/dashboard"/>
+                    </p:submenu>
+                     <p:submenu  label="Distribution" icon="pi pi-cog"  >
+                        <p:menuitem  value="Plate Request" icon="pi pi-home" outcome="/dashboard"/>
+                    </p:submenu>
+                  
+
+                </pv:menu>
+            </h:form>
+        </div>
+    </div>
+
+</ui:composition>
